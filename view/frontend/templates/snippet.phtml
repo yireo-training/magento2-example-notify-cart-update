@@ -1,0 +1,17 @@
+<div class="snippet" data-bind="scope: 'cartSnippet'">
+    <span data-bind="text: isCalled"></span>
+</div>
+
+<script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "cartSnippet": {
+                            "component": "Yireo_ExampleNotifyCartUpdate/js/widgetObservingCart"
+                        }
+                    }
+                }
+            }
+        }
+</script>
