@@ -1,9 +1,10 @@
 define(
     [
         'uiComponent',
-        'Magento_Customer/js/customer-data'
+        'Magento_Customer/js/customer-data',
+        'knockout'
     ],
-    function(Component, customerData) {
+    function(Component, customerData, ko) {
 
         var isCalled = false;
 
@@ -15,9 +16,7 @@ define(
         });
 
         return Component.extend({
-            'defaults': {
-                'isCalled': isCalled
-            }
+            isCalled: ko.observable('')
         });
     }
 );
