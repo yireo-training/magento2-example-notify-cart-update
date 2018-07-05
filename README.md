@@ -4,7 +4,7 @@ Example Magento 2 module showing how to observe KnockoutJS-based cart updates
 ## Installation
 To install use the following composer command:
 
-    composer require yireo-training/magento2-example-notify-cart-update
+    composer require yireo-training/magento2-example-notify-cart-update:dev-master
 
 Next enable the module:
 
